@@ -1,5 +1,17 @@
 # Patator
 
+#Mis Pruebas-
+
+#Telnet
+
+#patator telnet_login host=192.168.1.1 inputs='FILE0\nFILE1' 0=usuarios.txt 1=contraseñas.txt -t 2 prompt_re='login:|Password:' -x ignore:fgrep='Login incorrect'
+
+
+
+
+
+
+
 Patator was written out of frustration from using Hydra, Medusa, Ncrack, Metasploit modules and Nmap NSE scripts for password guessing attacks. I opted for a different approach in order to not create yet another brute-forcing tool and avoid repeating the same shortcomings. Patator is a multi-threaded tool written in Python, that strives to be more reliable and flexible than his fellow predecessors.
 
 Currently it supports the following modules:
